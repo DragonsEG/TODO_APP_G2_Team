@@ -1,0 +1,180 @@
+<P>/h4>What is an API?</h4>
+An API, or application programming interface, is a set of defined rules that enable different applications to communicate with each other.
+It acts as an intermediary layer that processes data transfers between systems, letting companies open their application data and functionality to external third-party developers
+, business partners, and internal departments within their companies.
+The definitions and protocols within an API help businesses connect the many different applications they use in day-to-day operations, 
+which saves employees time and breaks down silos that hinder collaboration and innovation. For developers, API documentation provides the interface 
+for communication between applications, simplifying application integration.
+
+<h4>How an API works</h4>
+A simple way to understand how APIs work is to look at a common example—third-party payment processing. When a user purchases a product
+on an ecommerce site, they may be prompted to “Pay with Paypal” or another type of third-party system. This function relies on APIs to make the connection.
+•	When the buyer clicks the payment button, an API calls to retrieve information—also known as a request. This request is processed from an application to
+the web server via the API’s Uniform Resource Identifier (URI) and includes a request verb, headers, and sometimes, a request body.
+ 
+•	After receiving a valid request from the product webpage, the API makes a call to the external program or web server, in this case, the third-party payment system.
+ 
+•	The server sends a response to the API with the requested information.
+ 
+•	The API transfers the data to the initial requesting application, here the product website.
+While the data transfer will differ depending on the web service being used, the requests and responses all happen through an API. There is no visibility on the user interface, meaning APIs exchange data within the computer or application, and appear to the user as a seamless connection
+
+
+<h4>API benefits</h4>
+APIs simplify design and development of new applications and services, and integration and management of existing ones. But they offer other significant
+benefits to developers and organizations at large.
+Improved collaboration. The average enterprise uses almost 1,200 cloud applications (link resides outside ibm.com), many of which are disconnected. 
+APIs enable integration so that these platforms and apps can seamlessly communicate with one another. Through this integration,
+companies can automate workflows and improve workplace collaboration. Without APIs, many enterprises would lack connectivity, 
+causing information silos that compromise productivity and performance.
+Accelerated innovation. APIs offer flexibility, allowing companies to make connections with new business partners,
+offer new services to their existing market, and, ultimately, access new markets that can generate massive returns 
+and drive digital transformation. For example, the company Stripe began as an API with just seven lines of code. 
+The company has since partnered with many of the biggest enterprises in the world, diversified to offer loans and corporate cards,
+and was recently valued at USD 36 billion (link resides outside ibm.com).
+Data monetization. Many companies choose to offer APIs for free, at least initially, so that they can build an audience of developers
+around their brand and forge relationships with potential business partners. If the API grants access to valuable digital assets,
+the business monetize it by selling access. This is referred to as the API economy. When AccuWeather (link resides outside ibm.com) launched its self-service developer portal to sell a wide range of API packages, it took just 10 months to attract 24,000 developers, selling 11,000 API keys and building a thriving community in the process.
+System security. APIs separate the requesting application from the infrastructure of the responding service, and offer layers of security between the two as they communicate. For example, API calls typically require authentication credentials; HTTP headers, cookies or query strings can provide additional security during data exchange and an API gateway can control access to further minimize security threats.
+End-user security and privacy. Just as APIs provide added protection within a network, they can also provide another layer of protection for personal users.
+When a website requests a user’s location, which is provided via a location API, the user can then decide whether to allow or deny this request.
+Many web browsers and mobile operating systems, like iOS, have permission structures built-in when APIs request access to applications and their data.
+When the app must access files through an API, file systems such as windows, Mac and Linux use permissions for that access.
+
+
+<h4>Types of APIs</h4>
+Today most APIs are web APIs that expose an application's data and functionality over the internet. Here are the four main types of web API:
+•	Open APIs are open-source application programming interfaces you can access with the HTTP protocol. Also known as public APIs, they have defined API endpoints and request and response formats.
+ 
+•	Partner APIs connect strategic business partners. Typically, developers access these APIs in self-service mode through a public API developer portal. Still, they need to complete an onboarding process and get login credentials to access partner APIs.
+ 
+•	Internal APIs remain hidden from external users. These private APIs aren't available for users outside of the company and are instead intended to improve productivity and communication across different internal development teams.
+ 
+•	Composite APIs combine multiple data or service APIs. They allow programmers to access several endpoints in a single call. Composite APIs are useful in microservices architecture where performing a single task may require information from several sources
+
+
+
+<h4>What Is a REST API?</h4>
+
+An API (application programming interface) is a set of functions and protocols that enables communications between different software applications or systems. 
+The API establishes a collection of commands that users can invoke to retrieve the information that they’re looking for in an organized, programmatic manner.
+REST (representational state transfer) is a style of software architecture that defines constraints on how different systems communicate.
+An API that complies with these REST principles is known as a “REST API.” The six principles of REST (five required, and one optional) are:
+•	Client-server architecture: REST APIs separate the client (the one requesting information) from the server (the one possessing information). The client does not have to worry about how the server stores and retrieves data.
+•	Uniform interface: Whether the client is a software application, a browser, a mobile app, or something else entirely, it can access and use the REST API in the same way.
+•	Statelessness: The server does not have to remember the client’s state. All the client’s requests must be “stateless,” so each request must include all necessary information (such as the client’s authentication details).
+•	Cacheability: REST servers can cache data and reuse it for other requests in the future.
+•	Layered system: REST APIs may have multiple intermediary layers between the client and the server. However, the client does not have to know these implementation details.
+•	Code on demand (optional): Clients may download code (e.g. Java applets or JavaScript scripts) to access additional functionality at runtime.
+
+
+<h4>Benefits of RESTful APIs</h4>
+1.	Scalability: RESTful APIs allow developers to create scalable systems by separating the client and server concerns.
+By building APIs that adhere to the REST architectural style, developers can create a stateless service that can handle a large number of requests with ease.
+2.	Reusability: One of the most significant benefits of RESTful APIs is that they are highly reusable.
+Once an API has been created, it can be used by multiple clients, including web applications, mobile applications, and even other APIs.
+3.	Simplified development: RESTful APIs provide a standardized way of accessing and manipulating resources.
+This standardization simplifies the development process, allowing developers to focus on building functionality rather than worrying about the underlying infrastructure.
+4.	Improved performance: RESTful APIs are typically lightweight and use common web protocols like HTTP and JSON, which are optimized for performance.
+This results in faster response times and better overall system performance
+
+<h4>Challenges of RESTful APIs</h4>
+1.	Security: RESTful APIs require careful consideration of security, as they expose data and functionality to external clients.
+Developers must implement appropriate authentication and authorization mechanisms to ensure that only authorized clients can access sensitive data.
+2.	Versioning: APIs are subject to frequent changes, and managing these changes can be challenging. 
+Developers must carefully manage versioning and backward compatibility to ensure that existing clients are not impacted by changes to the API.
+3.	Documentation: Clear and concise documentation is crucial for RESTful APIs, as it helps clients understand how to use the API effectively.
+Developers must invest time in creating and maintaining accurate documentation to reduce confusion and improve adoption.
+
+
+
+Architectural styles for APIs
+REST
+REST was one of the first standards for APIs, as laid out in Roy Fielding’s dissertation, and it remains one of the best. REST is also the most popular, by far, making up a mammoth 89% of APIs.
+REST stands for REpresentational State Transfer. It’s a standard that lets users make API requests using simple HTTP commands.
+REST’s serverless architecture allows for easier decoupling between user and server, making it excellent for abstraction. 
+It can also support a wide range of data formats, so it’s quite flexible as well as scalable.
+REST is not without its downsides, though. It returns a lot of metadata, for example, which can slow down response time and use up unnecessary bandwidth.
+This large format, along with issues regarding overfetching and underfetching, is one of the main reasons that Facebook developed GraphQL in 2012.
+Webhooks
+Sometimes we need real-time data interactions. Perhaps it’s best for the application to automatically receive the latest updates instead of manually querying the API.
+Webhooks solve these situations for you.
+A webhook can be used to send data whenever a new event occurs. For example, imagine you’ve set up a new email list and want updates whenever you get a new subscription.
+A webhook can transmit that data, saving you the time, effort, and energy of making a query. This can also prevent wasting unnecessary resources making API calls when the data hasn’t changed.
+The main downside of webhooks is they’re not as versatile or customizable as a fully-fledged API. It’s simply a one-way data transmitter. There’s also no indication if the receiver is working, so you won’t necessarily know if the data being transmitted isn’t getting where it’s supposed to go. Webhooks have all manner of useful applications, though. You’ll just want to have a monitoring solution in place to ensure you’re notified if something goes wrong.
+SOAP
+SOAP is an XML-formatted structure standardized by W3C. It’s the most widely used format for web services and useful for a vast number of different applications.
+SOAP is also excellent for privacy, allowing for encrypted messages and integrity inside each transaction.
+However, SOAP is the biggest file format due to the verbose XML structure. SOAP is only appropriate when large bandwidths are available.
+It’s also very rigid, though, so it’s not very customizable, which significantly slows down its widespread adoption.
+GraphQL
+Facebook’s GraphQL has a lot going for it. Its simple, JSON-like data structure is easy for non-technicians to understand and use. 
+GraphQL is database-agnostic, meaning you can use it with virtually any database you can think of.
+This makes your API eminently scalable and portable. These traits are key to an API’s widespread adoption and ultimate success. 
+GraphQL is also excellent for privacy, as it will expose certain functions while leaving the rest of the data secure.
+It also has detailed error logs, which are useful for large and unwieldy APIs.
+GraphQL’s not the best choice for complex queries, though, as too many nested queries can cause an overload and system shutdown.
+WebSockets
+If you want the advantages of webhooks but also want two-way communication, WebSockets are the way to go.
+Like webhooks, WebSockets provide real-time data transmission. They’re also able to receive data, making them the best of both worlds.
+WebSocket connections are much faster than HTTP, as well, so they’re a great pick if you’re looking for the fastest connections possible.
+However, WebSockets have problems, which explains why they’re not more popular. They’re especially rigid, for one thing, unlike other API architectural styles
+. If a WebSocket goes down, there’s no load balancing or mechanism for reconnecting. They also don’t support caching, unlike HTTP.
+Many proxy servers don’t support WebSockets, either. This means you often have to have an HTTP streaming infrastructure in place in tandem with your WebSockets.
+gRPC
+For all of its many strengths, REST is not the fastest or most efficient API architecture out there. In fact, gRPC is 7 times faster.
+gRPC also has a native code compiler, removing the need for third-party tools. Based on HTTP 2, gRPC is also ideal for microservice environments and useful for data streaming.
+One thing to keep in mind, however, is that gRPC uses the Protobuf format instead of JSON. Protobuf is lightweight and efficient due to its data compression.
+It’s not as understandable by humans, however. It’s also not as widespread as JSON, either, so you might need to put a translator in place if
+you’re integrating gRPC APIs into other API environments. gRPC is also more complicated and harder to implement than other API architectures.
+If you’re looking for something that’s fast and easy to set up, you’d do better to go with another API architectural style like REST.
+MQTT
+MQTT is a useful API architecture for IoT applications. It’s popular for being lightweight and having low battery usage. It’s also popular for its messaging accuracy.
+Unlike other API architectural styles, MQTT doesn’t use HTTP for sending or receiving requests. Instead, it uses TCP/IP and a “publish-subscribe” model.
+This means the receiver needs an MQTT Broker to integrate with the device using MQTT, which acts as a sort of post office for MQTT messaging.
+MQTT is limited in its functionality, though. It can only send and receive basic requests and file types. It’s also not as interactive as REST, lacking the ability to POST, GET, DELETE, or PUT.
+With this in mind, MQTT is mainly appropriate for IoT applications specifically. It’s also suitable for situations with limited connectivity or low bandwidth.
+AMQP
+AMQP is an API architecture designed for microservices. AMQP stands for Advanced Messaging Queuing Protocol and is intended to be used whenever massive amounts of data or messaging are required.
+AMQP is an amalgam of a few of the API architectural styles we’ve already discussed. It uses the publish/subscribe model of MQTT, for example.
+Its use of wire-level signals allows for continual data streams, making it similar to webhooks and WebSockets. It utilizes TCP like MQTT, too.
+AMQP is particularly secure as it uses the Quality of Service (QoS) protocol. It’s also particularly adept at handling asynchronous messaging, regardless of OS.
+AMQP has its share of drawbacks, though. It’s not backward compatible, for starters, so you’ll only be able to integrate with the current version.
+It’s also more complicated than HTTP. It also requires higher bandwidth than MQTT.
+Server-Sent Events
+Server-Sent Events (SSEs) are like a mix of webhooks and WebSockets but with many limitations removed. It offers the efficiency and connectivity of
+webhooks and WebSockets but also provides automatic reconnection should something go wrong.
+SSEs use XHR to stream data over HTTP, making it a practical choice for projects requiring real-time data, such as weather apps or stock services.
+SSEs are fairly easy to set up and use and are accepted by most major browsers since they’ve been in use for years.
+But if it’s not yet supported by the particular browser, it can be poly-filled using JavaScript.
+The downside is SSEs are not that prevalent so there aren’t that many libraries available, unfortunately. They support a limited range of data, too, and only transmit UTF-8.
+Additionally, browsers can only support a maximum of six SSEs simultaneously. Finally, SSEs are only uni-directional, so their usefulness is limited and specific, usually to real-time apps.
+EDI/EDA
+EDI stands for Electronic Data Interchange, and EDA is shorthand for event-driven architecture. Both offer powerful capabilities for data transfer in different ways.
+EDI has been around since the late ’70s. It uses a P2P network to transmit large quantities of standardized data. It’s pretty straightforward to use and widely available, thanks to its longevity.
+Like AMQP, EDI isn’t backward compatible, unfortunately. Three versions of EDI are available, and each only works with the same version.
+EDI is also much more limited in its scope and usefulness, unfortunately. It’s more like a tunnel than an exchange, as it can only connect two users.
+It’s also relatively expensive and cumbersome to implement.
+EDA has also been around since the ’70s. It’s a fairly simple concept, similar to webhooks in many ways. When something happens, something is triggered.
+EDA is also inherently scalable — events can be queued and retrieved at a later date. Subscriptions can be turned on and off, as well, 
+making EDA useful for “pub/sub” or “publish/subscribe” applications.
+You always need to be careful with real-time applications, though, as there are no built-in guardrails. If EDA is connected to a service that charges per transaction, 
+this can quickly become a costly mistake. It can also cause performance issues, depending on the amount of traffic at a particular time
+
+
+
+Resources :
+
+
+                1-	https://nordicapis.com/top-architectural-styles-for-apis-in-2023/
+
+                2-https://www.ibm.com/topics/api
+
+               3-https://www.linkedin.com/pulse/benefits-challenges-using-restful-       apis-aaron-bean/
+
+               4- https://medium.com/api-university/architectural-styles-for-apis-soap-rest-and-rpc-9f040aa270fa#:~:text=In%20general%2C%20an%20architectural%20style,than%20building%20everything%20from%20scratch.
+
+</P>
+
+
+
